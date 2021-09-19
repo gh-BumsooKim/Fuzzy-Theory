@@ -81,7 +81,7 @@ U = zeros(7, 7);
 for ii = 1:length(x)
     for jj = 1:length(y)
         w1 = min(LOW(ii),  HIGH(jj));   % base on Rule No.1
-        w2 = min(HIGH(ii), HIGH(jj));   % base on Rule No.2
+        w2 = min(HIGH(ii), LOW(jj));    % base on Rule No.2
         w3 = min(HIGH(ii), HIGH(jj));   % base on Rule No.3
         w4 = min(LOW(ii),  LOW(jj));    % base on Rule No.4
         
