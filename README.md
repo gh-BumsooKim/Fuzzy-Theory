@@ -47,6 +47,10 @@ Rule No.4 : IF x in LOW   AND y is LOW,   THEN z is STOP    ~ 0 rpm
 </p>
 
 ## Fuzzy c-Means Clustering
+
+Fuzzy c-Means Clustering is soft clustering in which the observation value for each cluster has a probability or probability(0~1) that is not a truth value(0 or 1).
+This is different from k-Means Clustering.
+
 ```matlab
 %2D Data is initialized from Random Functions following  code :
 
