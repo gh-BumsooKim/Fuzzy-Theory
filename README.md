@@ -45,3 +45,34 @@ Rule No.4 : IF x in LOW   AND y is LOW,   THEN z is STOP    ~ 0 rpm
   <img src="imgs/Fuzzy_Control_of_Air_Conditioner_figure2.png" width=48%>
   <img src="imgs/Fuzzy_Control_of_Air_Conditioner_figure1.png" width=48%>
 </p>
+
+## Fuzzy c-Means Clustering
+```matlab
+%2D Data is initialized from Random Functions following  code :
+
+data_n = 300;
+dist = 3; % for random wide distribution
+
+data = randn(data_n, 2);
+data = [data; randn(data_n,2)+dist*ones(data_n,2)];
+data = [data; randn(data_n,2)-dist*ones(data_n,2)];
+
+%optimization stopped until objective function improved by less than 0.001 between the final two iterations
+Iteration count = 1, obj. fcn = 7583.608816
+Iteration count = 2, obj. fcn = 6109.651661
+Iteration count = 3, obj. fcn = 5939.244259
+...
+Iteration count = 15, obj. fcn = 3037.072359
+Iteration count = 16, obj. fcn = 3037.072340
+Iteration count = 17, obj. fcn = 3037.072333
+```
+<p align="center">
+  <img src="imgs/Fuzzy_c-Means_Clustering_figure1.png" width=48%>
+  <img src="imgs/Fuzzy_c-Means_Clustering_figure2.png" width=48%>
+</p>
+
+<p align="center">
+  <img src="imgs/Fuzzy_c-Means_Clustering_figure3.png" width=48%>
+  <img src="imgs/Fuzzy_c-Means_Clustering_figure4.png" width=48%>
+</p>
+
